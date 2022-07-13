@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+  images: {
+    loader: "imgix",
+    path: "",
+  },
   swcMinify: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
